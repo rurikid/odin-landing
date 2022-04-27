@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+:root {
+  --black: #161616;
+  --white: #D8D8D8;
+  --top: #CC9543;
+  --red: #D80000;
+  --ardor: #FF8000;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+html {
+  background-color: var(--black);
+  scroll-snap-type: y mandatory; /* body won't work ¯\_(ツ)_/¯ */
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 5vh;
+  font-family: 'Uncial Antiqua';
+  scroll-snap-align: start;
+}
+
+header p {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+header a {
+  color: var(--ardor);
+}
+
+header a:hover {
+  color: #E6CC80;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: var(--ardor);
+  font-family: 'Uncial Antiqua';
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 
+    3px 3px 0 var(--black),
+    -1px -1px 0 var(--black),  
+    1px -1px 0 var(--black),
+    -1px 1px 0 var(--black),
+     1px 1px 0 var(--black);
+  padding: 25px;
+}
+
+h2 {
+  /* font-family: 'Uncial Antiqua'; */
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+p {
+  padding: 5px;
+}
+
+.frost {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-actions {
+  font-family: 'Uncial Antiqua';
+}
+
+.header-actions li {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.header-actions :first-child
+{
+  margin-left: 0;
+}
+
+.header-links {
+  margin-right: 10px;
+}
+
+.header-links a img {
+  height: 2rem;
+  width: auto;
+}
+
+.about, .heroes, .villains, .community {
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.about {
+  background-image: url("/images/ruinedcity.jpg");
+}
+
+.info {
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 18px;
+  word-wrap: normal;
+  align-items: center;
+}
+
+.heroes {
+  background-image: url("/images/leshik.png");
+}
+
+.cards {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  padding: clamp(0.5rem, 2vw, 2rem);
+  background-color: rgba(64, 64, 64, .6);
+  border-radius: 10px;
+  border: 1px solid rgb(10, 7, 7);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  max-width: 90%;
+}
+
+.hero {
+  flex: 0 0 250px;
+}
+
+.villains {
+  background-image: url("/images/eoforwine.jpg");
+}
+
+.quote {
+  font-size: clamp(0.5rem, 5vw, 2rem);
+  font-style: italic;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  align-self: flex-end;
+}
+
+.community {
+  background-image: url("/images/voidgatealpha.png");
+}
+
+.community h1 {
+  font-size: 2.5rem;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vh;
+  scroll-snap-align: start;
+}
+
+.discord {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(51%) sepia(81%) saturate(5963%) hue-rotate(226deg) brightness(101%) contrast(90%) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.discord:hover {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(51%) sepia(93%) saturate(1957%) hue-rotate(360deg) brightness(102%) contrast(107%) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.o-slash {
+  color: var(--red);
+}
+
+.odin {
+  color: var(--top);
+}
+
+.odin a:hover {
+  color: var(--red);
+}
