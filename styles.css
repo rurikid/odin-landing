@@ -159,7 +159,7 @@ p {
 }
 
 .about {
-  background-image: url("/images/ruinedcity.jpg");
+  background-image: url("./images/ruinedcity.jpg");
 }
 
 .info {
@@ -173,7 +173,7 @@ p {
 }
 
 .heroes {
-  background-image: url("/images/leshik.png");
+  background-image: url("./images/leshik.png");
 }
 
 .cards {
@@ -196,7 +196,7 @@ p {
 }
 
 .villains {
-  background-image: url("/images/eoforwine.jpg");
+  background-image: url("./images/eoforwine.jpg");
 }
 
 .quote {
@@ -213,7 +213,7 @@ p {
 }
 
 .community {
-  background-image: url("/images/voidgatealpha.png");
+  background-image: url("./images/voidgatealpha.png");
 }
 
 .community h1 {
