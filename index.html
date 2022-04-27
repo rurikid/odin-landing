@@ -1,65 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Conflagration</title>
-    </head>
-    <header>
-        <img src="" />
-        <a href="http://www.rurikid.com">Ø</a>
-        <a href="http://www.varangianstudios.com">VS</a>
-    </header>
-    <body>
-        <div class="hero">
-            <div class="description">
-                <h1>Conflagration</h1>
-                <p>In a world devastated by ancient tragedy, only you can rise above the ruins.</p>
-                <button>Join us!</button>
-            </div>
-            <img src="" />
+<html class="flex-column flex-center">
+  <head>
+    <title>Ardor - Tragic with Magic</title>
+    <link rel="icon" type="image/svg+xml" href="/images/vs.svg">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header class="flex-row" id="home">
+    <p><a href="#home">Ardor</a></p>
+    <ul class="flex-row header-actions">
+      <li><a href="#about">About</a></li>
+      <li><a href="#heroes">Heroes</a></li>
+      <li><a href="#villains">Villains</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <div class="flex-row flex-center header-links">
+      <a href="http://www.varangianstudios.com"><img src="/images/vs.svg" /></a>
+    </div>
+  </header>
+  <body>
+    <div class="about" id="about">
+      <div class="flex-row description frost cards">
+        <h1>Behold, Ardor!</h1>
+        <div class="card info">
+          <p>For most species on the planet, this world is yet a young one.</p>
+          <p>The sentient races still wander the land in great migratory tribes and have not yet chosen a land to call home.</p>
+          <p>The beasts of the field have not yet been taught to obey and the wild grains of the vast prairies have not yet been confined to the fields.</p>
+          <p>There are no grand kingdoms or great orders of wizards and no organized sects of clergy.</p>
+          <p>Darkness and viciousness are in no small supply as hosts of monsters yet rule the realm and have not yet retreated to their mountain peaks and otherwise dark places.</p>
         </div>
-        <div class="info">
-            <h1>Experience the Awakening</h1>
-            <div class="card">
-                <img src="">
-                Zodd Ganun, Champion Fighter
-            </div>
-            <div class="card">
-                <img src="">
-                Vitor Hammerfist, Tempest Cleric
-            </div>
-            <div class="card">
-                <img src="">
-                Talon Shadowend, Assassin Rogue
-            </div>
-            <div class="card">
-                <img src="">
-                Iihaop Thuwhi, Evocation Wizard
-            </div>
-            <div class="card">
-                <img src="">
-                Victoria Strigavenara, Artillerist Artificer
-            </div>
-            <div class="card">
-                <img src="">
-                Colbert Firebrook, College of Lore Bard
-            </div>
+      </div>
+    </div>
+    <div class="heroes" id="heroes">
+      <div class="flex-column flex-center frost">
+        <h1>Stalwart Heroes</h1>
+        <div class="flex-row flex-center cards">
+          <div class="flex-column flex-center card hero">
+            <img src="/images/zodd.png">
+            <h2>Zodd Ganun</h2>
+            <h3>Champion Fighter</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/vitor.png">
+            <h2>Vitor Hammerfist</h2>
+            <h3>Tempest Cleric</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/talon.png">
+            <h2>Talon Shadowend</h2>
+            <h3>Assassin Rogue</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/iihaop.png">
+            <h2>Iihaop Thuwhi</h2>
+            <h3>Evocation Wizard</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/colbert.png">
+            <h2>Colbert Firebrook</h2>
+            <h3>College of Lore Bard</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/dain.png">
+            <h2>Dain Stoneheart</h2>
+            <h3>Paladin of Vengeance</h3>
+          </div>
+          <div class="flex-column flex-center card hero">
+            <img src="/images/durgan.png">
+            <h2>Durgan Cragmaw</h2>
+            <h3>Druid of Spores</h3>
+          </div>
         </div>
-        <div class="quote">
-            <p>You rage against the darkness, an insurmountable inevitability that smothers us all. Do you never notice? It envelops you even now!</p>
-            <p>- Priestess Eoforwine</p>
+      </div>
+    </div>
+    <div class="villains" id="villains">
+      <div class="flex-row flex-center frost cards">
+        <h1>Villains</h1>
+        <div class="flex-column flex-center card quote">
+          <p>"You rage against the darkness, an insurmountable inevitability that smothers us all. Did you never notice? It envelops you even now!"</p>
+          <p class="attribution">- Priestess Eoforwine</p>
         </div>
-        <div class="action">
-            <div class="action-card">
-                <div class="action-text">
-                    <h1>The time is nigh to struggle against darkness!</h1>
-                    <p>Join the community now on Discord!</p>
-                </div>
-                <button>Join us!</button>
-            </div>
+        <div class="flex-column flex-center card quote">
+          <p>"Recount to me the atrocities I've committed and I'll name the price of Salvation."</p>
+          <p class="attribution">- Undaulik'valk the Deathless</p>
         </div>
-    </body>
-    <footer>
-        <p>ØRurikid for The Odin Project</p>
-        <p>© 2022</p>
-    </footer>
+        <div class="flex-column flex-center card quote">
+          <p>"Prostrate yourselves in dread of he who treads in my wake!"</p>
+          <p class="attribution">- Crolvaax, Harbinger of Skal'nik</p>
+        </div>
+      </div>
+    </div>
+    <div class="community" id="community">
+      <div class="flex-column flex-center frost">
+        <h1>Experience the Awakening!</h1>
+        <a target="_" href="https://discord.gg/z8qwzgv"><img class="discord" src="/images/discord-brands.svg" /></a>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p><a href="https://www.github.com/rurikid"><span class="o-slash">Ø</span>Rurikid</a> for <a href="https://www.theodinproject.com"><span class="odin">The Odin Project</span></a></p>
+    <p>© 2022</p>
+  </footer>
 </html>
